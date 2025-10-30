@@ -1,1 +1,1 @@
-# Practic_work_12
+# Practic_work_12 Шуралёв Данила ИСБ-224
