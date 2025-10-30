@@ -8,20 +8,22 @@ namespace ConsoleApp3
 {
     internal class Book
     {
-        private readonly string ISBN;
+        private readonly string _isbn; 
         public string Title { get; set; }
         public string Author { get; set; }
-        public Book(string isbn, string title, string author)
+        public Book(string title, string author, string isbn)
         {
-            ISBN = isbn;
             Title = title;
             Author = author;
+            _isbn = isbn; 
         }
-        public void BookInfo()
+        public string ISBN
         {
-            Console.WriteLine($"ISBN: {ISBN}");
-            Console.WriteLine($"Название: {Title}");
-            Console.WriteLine($"Автор: {Author}");
+            get { return _isbn; }
+        }
+        public string GetBookInfo()
+        {
+            return $"Title: {Title}, Author: {Author}, ISBN: {ISBN}";
         }
     }
 }
