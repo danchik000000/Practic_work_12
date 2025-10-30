@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace practic12
-{
+TASK_1_CALCULATOR
     internal class Program
     {
         static void Main(string[] args)
@@ -17,5 +10,48 @@ namespace practic12
             Console.WriteLine($"Умножение: {Calculator.Multiply(num1, num2)}");
             Console.WriteLine($"Деление: {Calculator.Divide(num1, num2)}");
         }                
+    }
+}
+TASK_2_ProgrqamConfig
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            ProgramConfig.ProgramInfo();
+        }
+    }
+}
+TASK_3_ObjectCounter
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            ObjectCounter num1 = new ObjectCounter();
+            ObjectCounter num2 = new ObjectCounter();
+            Console.WriteLine($"Создано объектов: {ObjectCounter.GetCounter()}");
+        }
+    }
+}
+TASK_4_Book
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Book book1 = new Book("55", "Василий", "123456");
+            Console.WriteLine(book1.GetBookInfo());
+        }
+    }
+}
+TASK_5_Settings
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Settings.PrintConfigPath();
+        }
     }
 }
